@@ -1,0 +1,60 @@
+/*button{*/
+/*    top: 5vh;*/
+/*    margin-top: 15vh;*/
+/*    border-radius: 0.5rem;*/
+/*    width: 15vw;*/
+/*    font-size: 1.5rem;*/
+/*    font-weight: 500;*/
+/*    !*background-color: red;*!*/
+/*    padding: 10px;*/
+/*    !*margin: 6px;*!*/
+/*}*/
+
+button {
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+}
+
+/* General styling */
+
+button {
+    background: whitesmoke;
+    border: 4px solid #fff;
+    border-radius: 1em;
+    color: #222;
+    cursor: pointer;
+    font-size: 24px;
+    font: Helvetica, Arial, Sans-serif;
+    padding: 30px;
+}
+button:hover {
+    background: aqua;
+    color: black;
+    font-size: 34px;
+}
+
+button {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+body{
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    background-color: bisque;
+}
+.quote{
+    margin-top: 25vh;
+    color: var(--colorMain);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-shadow: var(--brShadow), var(--tlShadow);
+    position: relative;
+}
