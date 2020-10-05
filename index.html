@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <button type="button" id = "btn">Random quote</button>
+    <a class="theme-switch" onclick="theme()"><img id="theme-switch"
+        src="https://img.icons8.com/ios-glyphs/30/000000/moon-symbol.png" style="width:20px;"
+        class="inver" id="im"></a>
+    <button type="button" id="btn">Random quote</button>
     <div class="quote">
-        <h1 id = "quote">hii there</h1>
-        <h3 id = "author">press </h3>
+        <h1 id="quote">hii there</h1>
+        <h3 id="author">press </h3>
     </div>
 
-    <script src = "textwriter.js"></script>
+    <script src="textwriter.js"></script>
+
+    <script>
+        function theme() {
+            var element = document.body;
+            element.classList.toggle("dark");
+            // prevent img flip
+            var elements = document.getElementsByTagName("img");
+            for (let index = 0; index < elements.length; index++) {
+                const element = elements[index];
+                element.classList.toggle("flip");
+            }
+            // toggle button
+            var img1 = "https://www.nicepng.com/png/full/121-1215503_sun-icon-white-sun-blue-background.png",
+                img2 = "https://img.icons8.com/ios-glyphs/30/000000/moon-symbol.png";
+            var imgElement = document.getElementById('theme-switch');
+            imgElement.src = (imgElement.src === img1) ? img2 : img1;
+        };
+    </script>
 </body>
+
 </html>

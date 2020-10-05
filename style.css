@@ -10,6 +10,25 @@
 /*    !*margin: 6px;*!*/
 /*}*/
 
+.theme-switch{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+
+}
+.dark {
+    /* filter: invert(1); */
+    background: #252525;
+    color: white;
+}
+
+.flip {
+    filter: invert(1);
+}
+
+.theme-switch {
+    cursor: pointer;
+}
 button {
     transition-property: all;
     transition-duration: 0.4s;
